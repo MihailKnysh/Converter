@@ -9,7 +9,7 @@ public class Main {
 
         System.out.print("What do you want to do?\n" +
                 "1. Find out the exchange rate.\n" +
-                "2. Convert from grn to another currency.\n"+
+                "2. Convert from grn to another currency.\n" +
                 "Your choice: ");
         choice = scanner.nextInt();
 
@@ -28,15 +28,15 @@ public class Main {
 
                 switch (currencyChar) {
                     case 'u':
-                        outputString= String.format("\n%.3f grn to usd is %.3f",quantity, quantity / converter.getUsdRate());
+                        outputString = String.format("\n%.3f grn to usd is %.3f", quantity, quantity / converter.getUsdRate());
                         System.out.println(outputString);
                         break;
                     case 'e':
-                        outputString= String.format("\n%.3f grn to eur is %.3f",quantity, quantity / converter.getEurRate());
+                        outputString = String.format("\n%.3f grn to eur is %.3f", quantity, quantity / converter.getEurRate());
                         System.out.println(outputString);
                         break;
                     case 'r':
-                        outputString= String.format("\n%.3f grn to rub is %.3f",quantity, quantity / converter.getRubRate());
+                        outputString = String.format("\n%.3f grn to rub is %.3f", quantity, quantity / converter.getRubRate());
                         System.out.println(outputString);
                         break;
                     default:
